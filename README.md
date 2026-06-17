@@ -32,8 +32,8 @@ Engineering teams solve hard problems inside Jira Service Management threads —
 
 | | |
 |---|---|
-| **Ahmed Aribi** | MPI Student @ INSAT · competitive programming amateur · AI enthusiast |
-| **Myriam Gamra** | MPI Student @ INSAT · same path, same obsession with clean systems |
+| **Ahmed Aribi** | MPI Student @ INSAT · Algorithms & Competitive Programming · AI Engineering |
+| **Myriam Gamra** | MPI Student @ INSAT · NTRF Alumna · Core AI & Pipeline Development |
 
 Two INSAT students who wanted to build something that doesn't just *look* smart in a demo, but holds up when a judge asks *"how do you know it isn't making that up?"*
 
