@@ -15,8 +15,7 @@ Outputs (all anchored to this file's directory, not the current working dir):
     tests/test_run.log                      # timestamped metrics + status log
     tests/confidence_report.png             # two-panel confidence/latency dashboard
 
-NOTE: requires `matplotlib` (add it to requirements.txt). Each ticket triggers a
-live Gemini call, so a valid API key in .env and network access are required.
+NOTE: Each ticket triggers a live Gemini call, so a valid API key in .env and network access are required.
 """
 
 import sys
