@@ -47,10 +47,16 @@ To navigate the challenges of non-deterministic systems, DocuAgent applies a ded
 
 ```text
 docuagent/
-├── config/             # Environment and system parameters
-├── src/                # Core AI Engine and Pipeline orchestration
-│   ├── agent.py        # Pydantic schemas, prompt chains, and agent definitions
-│   ├── atlassian_client.py # Integration logic for Atlassian REST APIs
-│   └── evaluator.py    # Metric evaluations and hallucination checks
-├── tests/              # Synthetic evaluation datasets
-└── README.md           # Project documentation
+├── config/
+│   └── settings.py
+├── src/
+│   ├── __init__.py
+│   ├── agent.py
+│   ├── atlassian_client.py
+│   └── evaluator.py
+├── tests/
+│   └── test_synthetic_payloads.py
+├── .env                         # Local environment secrets (GIT-IGNORED)
+├── .gitignore                   # Explicit tracking exclusions
+├── README.md                    # Project documentation
+└── requirements.txt             # Project dependencies and package manifests
