@@ -2,3 +2,5 @@ google-genai
 pydantic
 python-dotenv
 requests
+matplotlib
+ 
