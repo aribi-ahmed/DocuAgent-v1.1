@@ -55,7 +55,7 @@ timeline
 
 **Phase 2 — Logging & AI Security.** Generation alone isn't trustworthy, so we hardened it. We added latency timing around every Gemini call and routed timestamped, level-tagged metrics into a proper log file. Then came the centerpiece: a **deterministic grounding evaluator** that throws away the model's self-reported confidence and recomputes it from scratch — *does each quote the model cited actually exist in the source ticket?* This is the layer that catches hallucinations.
 
-**Phase 3 — Visualization.** Finally, we turned the numbers into something a human can read at a glance: a clean two-panel matplotlib dashboard rendering grounding confidence and processing latency across the synthetic test set.
+**Phase 3 — Visualization.** Finally, we turned the numbers into something a human can read at a glance: check this (link)[https://docu-agent-v-11--ahmedaribii.replit.app/] to visit the dashboard.
 
 ---
 
@@ -99,10 +99,7 @@ ev.validate_against_source(raw_logs, citations) # → True only if every quote i
 
 ## 📊 Data Visualization
 
-Running the evaluation harness produces a single professional dashboard at `tests/confidence_report.png` — a two-panel (1×2) matplotlib report with a clean tech palette, gridlines, and data labels sitting on top of every bar:
-
-- **Chart A — Grounding Confidence** *(blue)*: the deterministic score for each synthetic ticket, on a fixed 0–1 axis so high-confidence and low-confidence articles are instantly comparable.
-- **Chart B — Processing Latency (s)** *(teal)*: the real Gemini round-trip time per ticket, measured with `time.perf_counter()` around the API call only.
+We will be working on visualizing data and turning the JSON queries into a graphical, easy-to-understand visualization, using Matplotlib and pure Python!
 
 <div align="center">
 
@@ -179,7 +176,7 @@ We're upfront about this: the hard, novel part — **grounded synthesis with a d
 
 ## 🧰 Tech Stack
 
-**Google Gemini 2.5 Flash** (structured outputs, `temperature=0`) · **Pydantic** (typed schemas) · **matplotlib** (dashboard) · **Python standard library** (deterministic evaluator + logging) · **Atlassian REST** (Jira / Confluence)
+**Google Gemini 2.5 Flash** (structured outputs, `temperature=0`) · **Pydantic** (typed schemas) · **Flask** (dashboard) · **Python standard library** (deterministic evaluator + logging) · **Atlassian REST** (Jira / Confluence)
 
 ---
 
