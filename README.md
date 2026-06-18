@@ -55,7 +55,7 @@ timeline
 
 **Phase 2 — Logging & AI Security.** Generation alone isn't trustworthy, so we hardened it. We added latency timing around every Gemini call and routed timestamped, level-tagged metrics into a proper log file. Then came the centerpiece: a **deterministic grounding evaluator** that throws away the model's self-reported confidence and recomputes it from scratch — *does each quote the model cited actually exist in the source ticket?* This is the layer that catches hallucinations.
 
-**Phase 3 — Visualization.** Finally, we turned the numbers into something a human can read at a glance: check this ![link](https://docu-agent-v-11--ahmedaribii.replit.app/) to visit the dashboard.
+**Phase 3 — Visualization.** Finally, we turned the numbers into something a human can read at a glance: check this [link](https://docu-agent-v-11--ahmedaribii.replit.app) to visit the dashboard.
 
 ---
 
